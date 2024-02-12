@@ -31,6 +31,20 @@ class HBNBCommand(cmd.Cmd):
 
     prompt = '(hbtn) '
 
+    def do_EOF(self, line):
+        """Handles the end-of-file marker"""
+        return True
+
+    def do_quit(self, q):
+        """Exits the command interpreter"""
+        return True
+
+    def emptyline(self):
+        """
+        Do nothing!
+        """
+        pass
+
     def do_create(self, class_name=None):
         """
         Creates a new instance of class BaseModel, saves it (to a JSON file)
@@ -133,7 +147,7 @@ class HBNBCommand(cmd.Cmd):
 
             if (class_nm not in globals() or
                     type(globals()[class_nm]) is not type):
-                print("** class doesn't exist**")
+                print("** class doesn't exist **")
             elif not models.storage.all().get(obj_key):
                 print("** no instance found **")
             else:
@@ -151,20 +165,6 @@ class HBNBCommand(cmd.Cmd):
                         if key == obj_key:
                             setattr(obj, attr_nm, attr_val)
                         obj.save()
-
-    def do_EOF(self, line):
-        """Handles the end-of-file marker"""
-        return True
-
-    def do_quit(self, q):
-        """Exits the command interpreter"""
-        return True
-
-    def emptyline(self):
-        """
-        Do nothing!
-        """
-        pass
 
     def precmd(self, argument):
         """ executed just before the command line line is interpreted """
