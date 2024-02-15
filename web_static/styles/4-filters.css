@@ -6,7 +6,6 @@
     border-radius: 4px;
     display: flex;
     align-items: center;
-    flex-direction: row-reverse;
 }
 .filters button {
     font-size: 18px;
@@ -16,8 +15,9 @@
     width: 20%;
     border: none;
     border-radius: 4px;
-    margin-right: 30px;
+    margin: auto 30px auto auto;
 }
 .filters button:hover {
     opacity: 90%;
 }
+
