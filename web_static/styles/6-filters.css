@@ -69,5 +69,6 @@
 }
 
 .locations:hover .popover, .amenities:hover .popover {
-    display: block;  
+    display: block;
+    z-index: 2; 
 }
