@@ -5,4 +5,5 @@ footer {
     text-align: center;
     margin: auto;
     bottom: 0;
+    position: fixed;
 }

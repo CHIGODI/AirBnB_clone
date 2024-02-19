@@ -159,3 +159,36 @@ article .reviews h3 {
 article .reviews p {
     font-size: 12px;
 }
+
+
+/* ----Resposive Design---- */
+
+@media only screen and (max-width: 981px) {
+    .filters {
+        margin: auto;
+        max-width: 800px;
+        height: 70px;
+        display: flex;
+        align-items: center;
+    }
+    .filters button {
+        font-size: 16px;
+        height: 48px
+    }
+    .locations:hover .popover, .amenities:hover .popover {
+        display: block;
+        z-index: 2; 
+    }
+    .locations, .amenities {
+        height: 100%;
+        width: 25%;
+    }
+    .places h1 {
+        margin: 0;
+        font-size: 30px;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+    }
+  }
