@@ -183,12 +183,43 @@ article .reviews p {
         height: 100%;
         width: 25%;
     }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .filters {
+        margin: auto;
+        max-width: 390px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .filters button {
+        font-size: 16px;
+        height: 100%;
+        width: 30%;
+        margin:0;
+    }
+
+    .locations, .amenities {
+        display: none;
+    }
+    .locations:hover .popover, .amenities:hover .popover {
+        display: none;
+        z-index: 2; 
+    }
+    .locations, .amenities {
+        height: 100%;
+        width: 25%;
+    }
     .places h1 {
         margin: 0;
         font-size: 30px;
         top: 0;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, 0);
         position: absolute;
     }
   }
