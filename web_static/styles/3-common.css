@@ -1,13 +1,11 @@
-title {
-    background-image: url('../images/icon.png');
-    background-repeat: no-repeat;
-}
-
 body {
     margin: 0;
     padding: 0;
     color: #484848;
     font-size: 14px;
     font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    height: 100vh;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
 }

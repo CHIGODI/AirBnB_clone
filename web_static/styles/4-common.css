@@ -1,15 +1,19 @@
 body {
+    display: flex;
+    flex-direction: column;
     margin: 0;
     padding: 0;
+    min-height: 100vh;
     color: #484848;
     font-size: 14px;
     font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
     background-image: url('../images/icon.png');
     background-repeat: no-repeat;
-    box-sizing: border-box;
+    box-sizing: border-box;   
 }
 
 .container {
-    max-width: 1000px;
+    width: 1000px;
     margin: 30px auto;
+    flex-grow: 1;
 }
